@@ -1,0 +1,115 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
+  <diagram name="Page-1" id="cUor6FAF4dvSY7Fdmbdt">
+    <mxGraphModel dx="1098" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-1" value="Board" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="620" width="190" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-2" value="&lt;div&gt;+ totalCells: number&lt;/div&gt;+ cells: List&amp;lt;Cell&amp;gt;&lt;div&gt;+ snakes: List&amp;lt;Snake&amp;gt;&lt;/div&gt;&lt;div&gt;+ ladders: List&amp;lt;Ladder&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-1" vertex="1">
+          <mxGeometry y="26" width="190" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-1" vertex="1">
+          <mxGeometry y="120" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-4" value="&lt;div&gt;+ updatePlayerPosition(Player p, Integer position): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ validatePostion(Player p, Integer postion)&lt;br&gt;+ display():String&lt;/div&gt;&lt;div&gt;+ clear(): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-1" vertex="1">
+          <mxGeometry y="128" width="190" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-5" value="Snake &amp;amp; Ladder" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="35" y="28" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-6" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Requirement Gathering&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Board size should be n*n&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Total player - upto n/8&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Obstracles - Snake, size and number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;4. Ladder - size and number&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;5. Undo&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;6. Dice roller - count 1 - 6&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;7. Limit allowed moves at the end based on dice number&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="30" y="58" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-7" value="&lt;div&gt;Board: A standard Snake and Ladder board contains 100 cells numbered from 1 to 100.&lt;/div&gt;&lt;div&gt;Players: The game can be played by 2-4 players.&lt;/div&gt;&lt;div&gt;Dice: The game will have a standard dice that can roll numbers between 1 to 6.&lt;/div&gt;&lt;div&gt;Snakes: Snakes will have a start point (mouth) and an endpoint (tail). If a player lands on the mouth, they are taken down to the tail.&lt;/div&gt;&lt;div&gt;Ladders: Ladders will have a start point (bottom) and an endpoint (top). If a player lands on the bottom, they climb up to the top.&lt;/div&gt;&lt;div&gt;Turns: Players take turns in a round-robin fashion to roll the dice and move.&lt;/div&gt;&lt;div&gt;Winning Condition: A player wins if they land on the 100th cell exactly. For example, if a player is on the 99th cell, they must roll a 1 to win.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="230" y="200" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-8" value="Cell" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="580" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-9" value="+ number: Integer&lt;div&gt;+ players: List&amp;lt;Player&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-8" vertex="1">
+          <mxGeometry y="26" width="170" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-8" vertex="1">
+          <mxGeometry y="70" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-11" value="+ addPlayer(Player): Players&lt;div&gt;+ removePlayer(Player): Players&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-8" vertex="1">
+          <mxGeometry y="78" width="170" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-12" value="Player" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="580" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-13" value="+ name: String&lt;div&gt;+ id: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-12" vertex="1">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-14" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-12" vertex="1">
+          <mxGeometry y="70" width="160" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="NgxjaeIiT1O8_4Kmg0uf-8" value="+ makeMove(position: Position, board: Board): Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5WRsKA1DWgDTv-lLNCNs-12">
+          <mxGeometry y="80" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-16" value="Snake" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="810" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-17" value="+ start: Integer&lt;br&gt;+ end: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-16" vertex="1">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-16" vertex="1">
+          <mxGeometry y="60" width="160" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="NgxjaeIiT1O8_4Kmg0uf-4" value="+ isSnakeBite(Integer postion)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5WRsKA1DWgDTv-lLNCNs-16">
+          <mxGeometry y="70" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-20" value="Ladder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="810" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-21" value="+ start: Integer&lt;div&gt;+ end: Integer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-20" vertex="1">
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-20" vertex="1">
+          <mxGeometry y="70" width="160" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="NgxjaeIiT1O8_4Kmg0uf-6" value="+ isClimbLadder(Integer postion)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="5WRsKA1DWgDTv-lLNCNs-20">
+          <mxGeometry y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-24" value="Turn" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="370" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-25" value="+ currentTurn: Integer&lt;div&gt;+ players:List&amp;lt;Player&amp;gt;&lt;/div&gt;&lt;div&gt;+ totalPlayers: Integer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-24" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-24" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-27" value="+ next(): Player&lt;br&gt;+ setPlayers(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-24" vertex="1">
+          <mxGeometry y="88" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-28" value="Dice" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="667" y="370" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-29" value="+ currentValue: Integer&lt;div&gt;+ min: Integer&lt;/div&gt;&lt;div&gt;+ max: Integer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-28" vertex="1">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-28" vertex="1">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-31" value="+ rollDice(): Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-28" vertex="1">
+          <mxGeometry y="88" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-32" value="Game" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="360" width="160" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-33" value="+ players: List&amp;lt;Player&amp;gt;&lt;div&gt;+ board: Board&lt;/div&gt;&lt;div&gt;+ currentPlayer: Player&lt;/div&gt;&lt;div&gt;+ turn: Turn&lt;/div&gt;&lt;div&gt;+ isGameOver: Boolean&lt;/div&gt;&lt;div&gt;+ winner: Boolean&lt;/div&gt;&lt;div&gt;+ dice: Dice&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-32" vertex="1">
+          <mxGeometry y="26" width="160" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-34" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="5WRsKA1DWgDTv-lLNCNs-32" vertex="1">
+          <mxGeometry y="140" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5WRsKA1DWgDTv-lLNCNs-35" value="+ start(): void&lt;br&gt;+ nextTurn(): Player&lt;div&gt;+ setCurrentPlayer(Player p): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="5WRsKA1DWgDTv-lLNCNs-32" vertex="1">
+          <mxGeometry y="148" width="160" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
