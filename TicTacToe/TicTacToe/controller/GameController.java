@@ -1,5 +1,6 @@
 package TicTacToe.controller;
 
+import TicTacToe.models.Game;
 import TicTacToe.models.GameState;
 import TicTacToe.models.Player;
 import TicTacToe.strategies.WinningStrategy;
@@ -8,19 +9,22 @@ import java.util.List;
 
 public class GameController {
 
-    public void startGame(int size, List<Player> player, List<WinningStrategy> winningStrategies) {
+    public Game startGame(int size, List<Player> players, List<WinningStrategy> winningStrategies) {
+        return Game.getBuilder().setSize(size).setPlayers(players).setWinningStrategies(winningStrategies).build();
     }
 
-    public GameState getGameState() {
+    public GameState getGameState(Game game) {
         return null;
     }
 
-    public void display() {
+    public void display(Game game) {
+        game.displayBoard(game.getBoard());
     }
 
-    public void makeMove(){ }
+    public void makeMove(Game game) {
+    }
 
-    public Player getWinner(){
+    public Player getWinner(Game game) {
         return null;
     }
 }

@@ -4,6 +4,12 @@ public class HumanPlayer extends  Player{
     private Integer level;
     private Integer coins;
 
+    public HumanPlayer(String id, String name, Symbol symbol) {
+        super(id, name, symbol, PlayerType.HUMAN_PLAYER);
+        this.level = 1;
+        this.coins = 0;
+    }
+
     public Integer getLevel() {
         return level;
     }

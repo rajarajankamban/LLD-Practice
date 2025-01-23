@@ -1,10 +1,17 @@
 package TicTacToe.models;
 
-public abstract class Cell {
+public class Cell {
     private int row;
     private int column;
     private Symbol symbol;
     private CellState state;
+
+    public Cell(int row, int column) {
+        this.row = row;
+        this.column = column;
+        this.symbol = null;
+        this.state = CellState.EMPTY;
+    }
 
     public CellState getState() {
         return state;

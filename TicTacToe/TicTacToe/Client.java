@@ -1,9 +1,7 @@
 package TicTacToe;
 
 import TicTacToe.controller.GameController;
-import TicTacToe.models.BotPlayer;
-import TicTacToe.models.GameState;
-import TicTacToe.models.Player;
+import TicTacToe.models.*;
 import TicTacToe.strategies.WinningStrategy;
 
 import java.util.ArrayList;
@@ -18,21 +16,21 @@ public class Client {
         // list of players
         // list of winning strategies
         List<Player> players = new ArrayList<>();
-        players.add(new Player());
-        players.add(new BotPlayer());
+        players.add(new HumanPlayer("1", "Rajan", new Symbol('X')));
+        players.add(new BotPlayer("2", "BOTT", new Symbol('O'), BotDifficultyLevel.EASY));
         int size = 3;
         List<WinningStrategy> winningStrategies = new ArrayList<>();
 
-        gameController.startGame(size, players, winningStrategies);
+        Game game = gameController.startGame(size, players, winningStrategies);
 
-        while (gameController.getGameState().equals(GameState.IN_PROGRESS)) {
-            gameController.display();
-            gameController.makeMove();
+        while (gameController.getGameState(game).equals(GameState.IN_PROGRESS)) {
+            gameController.display(game);
+            gameController.makeMove(game);
         }
 
-        if (gameController.getGameState().equals(GameState.SUCCESS)) {
-            System.out.println("Winner:" + gameController.getWinner().getName());
-        } else if (gameController.getGameState().equals(GameState.DRAW)) {
+        if (gameController.getGameState(game).equals(GameState.SUCCESS)) {
+            System.out.println("Winner:" + gameController.getWinner(game).getName());
+        } else if (gameController.getGameState(game).equals(GameState.DRAW)) {
             System.out.println("Game ended in draw");
         }
     }
