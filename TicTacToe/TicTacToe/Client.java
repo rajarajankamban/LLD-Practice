@@ -23,10 +23,10 @@ public class Client {
 
         Game game = gameController.startGame(size, players, winningStrategies);
 
-        while (gameController.getGameState(game).equals(GameState.IN_PROGRESS)) {
+//        while (gameController.getGameState(game).equals(GameState.IN_PROGRESS)) {
             gameController.display(game);
-            gameController.makeMove(game);
-        }
+//            gameController.makeMove(game);
+//        }
 
         if (gameController.getGameState(game).equals(GameState.SUCCESS)) {
             System.out.println("Winner:" + gameController.getWinner(game).getName());

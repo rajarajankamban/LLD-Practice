@@ -14,7 +14,7 @@ public class GameController {
     }
 
     public GameState getGameState(Game game) {
-        return null;
+        return game.getGameState();
     }
 
     public void display(Game game) {
