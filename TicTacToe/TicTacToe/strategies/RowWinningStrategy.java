@@ -9,6 +9,10 @@ import java.util.HashMap;
 public class RowWinningStrategy implements WinningStrategy {
     HashMap<Integer, HashMap<Character, Integer>> rowCounts;
 
+    public RowWinningStrategy() {
+        rowCounts = new HashMap<>();
+    }
+
     @Override
     public Boolean checkWinner(Board board, Move move) {
         int row = move.getCell().getRow();
@@ -25,7 +29,7 @@ public class RowWinningStrategy implements WinningStrategy {
 
         counts.put(symbol.getValue(), counts.get((symbol.getValue())) + 1);
 
-        if (counts.get(symbol.getValue()).equals(board.getSize())) {
+        if (counts.get(symbol.getValue()) == (board.getSize())) {
             return true;
         }
 

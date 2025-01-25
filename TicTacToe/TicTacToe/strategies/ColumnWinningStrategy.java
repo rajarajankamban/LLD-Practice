@@ -8,6 +8,10 @@ import java.util.HashMap;
 
 public class ColumnWinningStrategy implements WinningStrategy {
     HashMap<Integer, HashMap<Character, Integer>> columnCounts;
+
+    public ColumnWinningStrategy(){
+        columnCounts = new HashMap<>();
+    }
     @Override
     public Boolean checkWinner(Board board, Move move) {
         int column = move.getCell().getColumn();

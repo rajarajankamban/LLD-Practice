@@ -5,6 +5,7 @@ import TicTacToe.strategies.WinningStrategy;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class Game {
@@ -15,6 +16,7 @@ public class Game {
     private List<Move> moves;
     private List<WinningStrategy> winningStrategies;
     private Player winner;
+    private static Scanner scanner;
 
     private Game(Integer size, List<Player> players, List<WinningStrategy> winningStrategies) {
         board = new Board(size);
@@ -24,6 +26,7 @@ public class Game {
         this.gameState = GameState.IN_PROGRESS;
         this.winner = null;
         this.moves = new ArrayList<>();
+        this.scanner = new Scanner(System.in);
     }
 
     public Integer getNextPlayerIndex() {
@@ -82,6 +85,31 @@ public class Game {
         this.players = players;
     }
 
+    public void undo() {
+        Integer currentPlayerIndex = nextPlayerIndex - 1 < 0 ? players.size() -1 : nextPlayerIndex - 1;
+        if (players.get(currentPlayerIndex).getPlayerType().equals(PlayerType.BOT)) {
+            return;
+        }
+        System.out.println("Do you wish to UNDO ? Y/N");
+        Boolean isUndo = scanner.nextBoolean();
+        if (!isUndo || moves.isEmpty()) {
+            return;
+        }
+        Move move = moves.removeLast();
+        Integer row = move.getCell().getRow();
+        Integer column = move.getCell().getColumn();
+        Cell cell = board.getGrid().get(row).get(column);
+        cell.setSymbol(new Symbol(null));
+        cell.setState(CellState.EMPTY);
+
+
+        nextPlayerIndex = currentPlayerIndex;
+
+        // Pop last move from moves
+        // Reset cell from board based on last move
+        // Reset the player to last one
+    }
+
     public void displayBoard(Board board) {
         board.display();
     }
@@ -96,18 +124,20 @@ public class Game {
         }
 
         updateGameMove(move, currentPlayer);
+
+
         nextPlayerIndex++;
         nextPlayerIndex = nextPlayerIndex % players.size();
 
-        if (checkWinnder(move)){
-            winner= currentPlayer;
+        if (checkWinner(move)) {
+            winner = currentPlayer;
             gameState = GameState.SUCCESS;
-        }else if(moves.size() == board.getSize() * board.getSize()){
+        } else if (moves.size() == board.getSize() * board.getSize()) {
             gameState = GameState.DRAW;
         }
     }
 
-    private boolean checkWinnder(Move move) {
+    private boolean checkWinner(Move move) {
         for (WinningStrategy winningStrategy : winningStrategies) {
             if (winningStrategy.checkWinner(board, move)) {
                 return true;

@@ -1,9 +1,9 @@
 package TicTacToe.models;
 
 public class Symbol {
-    private char value;
+    private Character value;
 
-    public Symbol(char value) {
+    public Symbol(Character value) {
         this.value = value;
     }
 

@@ -2,6 +2,8 @@ package TicTacToe;
 
 import TicTacToe.controller.GameController;
 import TicTacToe.models.*;
+import TicTacToe.strategies.ColumnWinningStrategy;
+import TicTacToe.strategies.RowWinningStrategy;
 import TicTacToe.strategies.WinningStrategy;
 
 import java.util.ArrayList;
@@ -16,16 +18,23 @@ public class Client {
         // list of players
         // list of winning strategies
         List<Player> players = new ArrayList<>();
-        players.add(new HumanPlayer("1", "Rajan", new Symbol('X')));
+        players.add(new HumanPlayer("1", "Rajan", new Symbol('R')));
+//        players.add(new HumanPlayer("2", "Anu", new Symbol('X')));
         players.add(new BotPlayer("2", "BOTT", new Symbol('O'), BotDifficultyLevel.EASY));
         int size = 3;
         List<WinningStrategy> winningStrategies = new ArrayList<>();
-
+        winningStrategies.add(new RowWinningStrategy());
+        winningStrategies.add(new ColumnWinningStrategy());
         Game game = gameController.startGame(size, players, winningStrategies);
 
         while (gameController.getGameState(game).equals(GameState.IN_PROGRESS)) {
-            gameController.display(game);
+
+
             gameController.makeMove(game);
+            gameController.display(game);
+            if (game.getGameState().equals(GameState.IN_PROGRESS))
+                gameController.undo(game);
+
         }
 
         if (gameController.getGameState(game).equals(GameState.SUCCESS)) {
