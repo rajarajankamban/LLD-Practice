@@ -1,6 +1,6 @@
 package TicTacToe.models;
 
-public abstract  class Player {
+public abstract class Player {
     private String id;
     private String name;
     private Symbol symbol;
@@ -44,4 +44,6 @@ public abstract  class Player {
     public void setPlayerType(PlayerType playerType) {
         this.playerType = playerType;
     }
+
+    public abstract Move makeMove(Board board);
 }

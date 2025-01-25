@@ -10,7 +10,14 @@ import java.util.List;
 public class GameController {
 
     public Game startGame(int size, List<Player> players, List<WinningStrategy> winningStrategies) {
-        return Game.getBuilder().setSize(size).setPlayers(players).setWinningStrategies(winningStrategies).build();
+        try {
+            return Game.getBuilder().setSize(size).setPlayers(players).setWinningStrategies(winningStrategies).build();
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+            System.out.println("Sorry. Invalid input. Please try to start game again.");
+        }
+
+        return null;
     }
 
     public GameState getGameState(Game game) {
@@ -22,6 +29,7 @@ public class GameController {
     }
 
     public void makeMove(Game game) {
+        game.makeMove();
     }
 
     public Player getWinner(Game game) {

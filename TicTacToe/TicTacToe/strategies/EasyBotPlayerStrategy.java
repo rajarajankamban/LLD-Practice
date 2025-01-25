@@ -1,20 +1,18 @@
 package TicTacToe.strategies;
 
-import TicTacToe.models.Board;
-import TicTacToe.models.Cell;
-import TicTacToe.models.CellState;
-import TicTacToe.models.Move;
+import TicTacToe.models.*;
 
 import java.util.List;
 
 public class EasyBotPlayerStrategy implements BotPlayerStrategy {
     @Override
-    public Move makeMove(Board board) {
+    public Move makeMove(Board board, Player player) {
         for (List<Cell> row : board.getGrid()) {
             for (Cell cell : row) {
                 if (cell.getState().equals(CellState.EMPTY)) {
 //                    return new Move(cell, null);
-                    return new Move(new Cell(cell.getRow(), cell.getRow()), null);
+                    System.out.println("Bot Move " + cell.getRow() + " " + cell.getColumn());
+                    return new Move(new Cell(cell.getRow(), cell.getColumn()), player);
                 }
             }
         }

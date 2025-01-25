@@ -3,7 +3,9 @@ package TicTacToe.models;
 import TicTacToe.strategies.WinningStrategy;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Game {
     private List<Player> players;
@@ -84,6 +86,61 @@ public class Game {
         board.display();
     }
 
+    public void makeMove() {
+        Player currentPlayer = players.get(nextPlayerIndex);
+        System.out.println("It's " + currentPlayer.getName() + " turn.");
+        Move move = currentPlayer.makeMove(board);
+        if (!validateMove(move)) {
+            System.out.println("Invalid move please try again");
+            return;
+        }
+
+        updateGameMove(move, currentPlayer);
+        nextPlayerIndex++;
+        nextPlayerIndex = nextPlayerIndex % players.size();
+
+        if (checkWinnder(move)){
+            winner= currentPlayer;
+            gameState = GameState.SUCCESS;
+        }else if(moves.size() == board.getSize() * board.getSize()){
+            gameState = GameState.DRAW;
+        }
+    }
+
+    private boolean checkWinnder(Move move) {
+        for (WinningStrategy winningStrategy : winningStrategies) {
+            if (winningStrategy.checkWinner(board, move)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void updateGameMove(Move move, Player currentPlayer) {
+        Integer row = move.getCell().getRow();
+        Integer column = move.getCell().getColumn();
+
+        Cell cellToChange = board.getGrid().get(row).get(column);
+
+        cellToChange.setState(CellState.FILLED);
+        cellToChange.setSymbol(currentPlayer.getSymbol());
+
+        move.setCell(cellToChange);
+        move.setPlayer((currentPlayer));
+        moves.add(move);
+    }
+
+
+    private boolean validateMove(Move move) {
+        Integer row = move.getCell().getRow();
+        Integer column = move.getCell().getColumn();
+        if (row < 0 || row >= board.getSize() || column < 0 || column >= board.getSize()) {
+            return false;
+        }
+
+        return board.getGrid().get(row).get(column).getState().equals(CellState.EMPTY);
+    }
+
     public static GameBuilder getBuilder() {
         return new GameBuilder();
     }
@@ -99,6 +156,7 @@ public class Game {
         private int size;
 
         public Game build() {
+            this.validateGame();
             return new Game(this.size, this.players, this.winningStrategies);
         }
 
@@ -146,7 +204,34 @@ public class Game {
         // No of players = size - 1
         // All players should have distinct symbol
         // We only have at max One Bot
-        private void validate() {
+
+        // Throw exception  and catch it in controller
+        private void validateGame() {
+            Boolean isValid = false;
+            if (players.size() >= size) {
+                throw new ArithmeticException("Mismatch between number of players and board size ");
+            }
+
+            HashSet<Character> symCharSet = new HashSet<>();
+            AtomicReference<Boolean> isBotFount = new AtomicReference<>(false);
+
+            for (Player player : players) {
+                if (symCharSet.contains(player.getSymbol().getValue())) {
+                    throw new RuntimeException("Duplicate player symbol");
+
+                }
+                symCharSet.add(player.getSymbol().getValue());
+
+                if (player.getPlayerType().equals(PlayerType.BOT)) {
+                    if (isBotFount.get()) {
+                        throw new RuntimeException("Only one BOT player is allowed");
+                    }
+                    isBotFount.set(true);
+                }
+
+
+            }
+
         }
 
     }
