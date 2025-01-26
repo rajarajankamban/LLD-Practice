@@ -86,6 +86,8 @@ public class Game {
     }
 
     public void undo() {
+
+        // Fix undo winning strategy
         Integer currentPlayerIndex = nextPlayerIndex - 1 < 0 ? players.size() -1 : nextPlayerIndex - 1;
         if (players.get(currentPlayerIndex).getPlayerType().equals(PlayerType.BOT)) {
             return;
