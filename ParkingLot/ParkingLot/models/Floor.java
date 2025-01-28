@@ -1,10 +1,15 @@
 package ParkingLot.models;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Floor {
     private String id;
     private String floorName;
+
+    private Slot[] slots;
+    private List<SupportedVehicleTypes> supportedVehicleTypes;
+    private FloorState floorState;
 
     public String getId() {
         return id;
@@ -30,12 +35,12 @@ public class Floor {
         this.slots = slots;
     }
 
-    public HashMap<VehicleType, Integer> getAllowedVehicleType() {
-        return allowedVehicleType;
+    public List<SupportedVehicleTypes> getSupportedVehicleTypes() {
+        return supportedVehicleTypes;
     }
 
-    public void setAllowedVehicleType(HashMap<VehicleType, Integer> allowedVehicleType) {
-        this.allowedVehicleType = allowedVehicleType;
+    public void setSupportedVehicleTypes(List<SupportedVehicleTypes> supportedVehicleTypes) {
+        this.supportedVehicleTypes = supportedVehicleTypes;
     }
 
     public FloorState getFloorState() {
@@ -46,7 +51,4 @@ public class Floor {
         this.floorState = floorState;
     }
 
-    private Slot[] slots;
-    private HashMap<VehicleType,Integer> allowedVehicleType;
-    private FloorState floorState;
 }

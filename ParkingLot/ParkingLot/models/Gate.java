@@ -1,11 +1,16 @@
 package ParkingLot.models;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Gate {
     private String id;
     private String name;
     private GateType gateType;
+    private Payment payment;
+    private GateState gateState;
+    private List<SupportedVehicleTypes> supportedVehicleTypes;
+    private Operator operator;
 
     public String getId() {
         return id;
@@ -47,12 +52,12 @@ public class Gate {
         this.gateState = gateState;
     }
 
-    public HashMap<VehicleType, Integer> getAllowedVehicleType() {
-        return allowedVehicleType;
+    public List<SupportedVehicleTypes> getSupportedVehicleTypes() {
+        return supportedVehicleTypes;
     }
 
-    public void setAllowedVehicleType(HashMap<VehicleType, Integer> allowedVehicleType) {
-        this.allowedVehicleType = allowedVehicleType;
+    public void setSupportedVehicleTypes(List<SupportedVehicleTypes> supportedVehicleTypes) {
+        this.supportedVehicleTypes = supportedVehicleTypes;
     }
 
     public Operator getOperator() {
@@ -63,8 +68,5 @@ public class Gate {
         this.operator = operator;
     }
 
-    private Payment payment;
-    private GateState gateState;
-    private  HashMap<VehicleType,Integer> allowedVehicleType;
-    private Operator operator;
+
 }

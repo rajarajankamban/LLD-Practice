@@ -1,20 +1,16 @@
 package ParkingLot.models;
 
-public class ParkingLot {
-    private String id;
+import java.util.List;
+
+public class ParkingLot extends BaseEntity {
     private String name;
-    private Floor[] floor;
+    private Floor[] floors;
     private Gate[] entryGates;
     private Gate[] exitGates;
-    private VehicleType[] allowedVehicleType;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private ParkingLotStatus parkingLotStatus;
+    private List<SupportedVehicleTypes> supportedVehicleTypes;
+    private int totalCapacity;
+    private String address;
 
     public String getName() {
         return name;
@@ -24,12 +20,12 @@ public class ParkingLot {
         this.name = name;
     }
 
-    public Floor[] getFloor() {
-        return floor;
+    public Floor[] getFloors() {
+        return floors;
     }
 
-    public void setFloor(Floor[] floor) {
-        this.floor = floor;
+    public void setFloors(Floor[] floors) {
+        this.floors = floors;
     }
 
     public Gate[] getEntryGates() {
@@ -48,12 +44,28 @@ public class ParkingLot {
         this.exitGates = exitGates;
     }
 
-    public VehicleType[] getAllowedVehicleType() {
-        return allowedVehicleType;
+    public ParkingLotStatus getParkingLotStatus() {
+        return parkingLotStatus;
     }
 
-    public void setAllowedVehicleType(VehicleType[] allowedVehicleType) {
-        this.allowedVehicleType = allowedVehicleType;
+    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
+        this.parkingLotStatus = parkingLotStatus;
+    }
+
+    public List<SupportedVehicleTypes> getSupportedVehicleTypes() {
+        return supportedVehicleTypes;
+    }
+
+    public void setSupportedVehicleTypes(List<SupportedVehicleTypes> supportedVehicleTypes) {
+        this.supportedVehicleTypes = supportedVehicleTypes;
+    }
+
+    public int getTotalCapacity() {
+        return totalCapacity;
+    }
+
+    public void setTotalCapacity(int totalCapacity) {
+        this.totalCapacity = totalCapacity;
     }
 
     public String getAddress() {
@@ -63,15 +75,4 @@ public class ParkingLot {
     public void setAddress(String address) {
         this.address = address;
     }
-
-    public String getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(String capacity) {
-        this.capacity = capacity;
-    }
-
-    private String address;
-    private String capacity;
 }

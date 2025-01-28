@@ -1,9 +1,32 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
   <diagram name="Page-1" id="C8TJBIB4cI3RyI80sVMX">
-    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tVv8EJueiG8kkGohXM46-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tVv8EJueiG8kkGohXM46-195" target="tVv8EJueiG8kkGohXM46-192">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="3210" />
+              <mxPoint x="800" y="3405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-195" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" vertex="1" parent="1">
+          <mxGeometry x="14" y="3170" width="676" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tVv8EJueiG8kkGohXM46-184" target="tVv8EJueiG8kkGohXM46-182">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="3230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="3023" />
+              <mxPoint x="790" y="3217" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-184" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=light-dark(#FF4281,#EDEDED);strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="10" y="2975" width="720" height="95" as="geometry" />
+        </mxCell>
         <mxCell id="tVv8EJueiG8kkGohXM46-1" value="Parking Lot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="40" y="50" width="80" height="30" as="geometry" />
         </mxCell>
@@ -69,7 +92,7 @@
         <mxCell id="tVv8EJueiG8kkGohXM46-24" value="Class Diagram" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="45" y="700" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tVv8EJueiG8kkGohXM46-26" value="ParkingGarage" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="tVv8EJueiG8kkGohXM46-26" value="ParkingLot" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="55" y="780" width="160" height="194" as="geometry" />
         </mxCell>
         <mxCell id="tVv8EJueiG8kkGohXM46-27" value="- id: String&lt;br&gt;&lt;div&gt;- buildingName: String&lt;/div&gt;&lt;div&gt;- floors: Floor[]&lt;/div&gt;&lt;div&gt;- capacity&lt;/div&gt;&lt;div&gt;- entryGates: Gate[]&lt;/div&gt;&lt;div&gt;- exitGates: Gate[]&lt;/div&gt;&lt;div&gt;- allowedVechileType: VechileType[]&lt;/div&gt;&lt;div&gt;- address: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tVv8EJueiG8kkGohXM46-26">
@@ -403,6 +426,198 @@
         </mxCell>
         <mxCell id="tVv8EJueiG8kkGohXM46-145" value="FAILED" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tVv8EJueiG8kkGohXM46-143">
           <mxGeometry y="78" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-147" value="Schema Design" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="5" y="2168" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-148" value="parking_lots" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2230" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-149" value="parking_floors&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2298" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-150" value="gates" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2370" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-151" value="parking_slots" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2440" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-152" value="operators" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2520" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-153" value="tickets" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2588" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-154" value="bills" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2658" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-155" value="payments" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2718" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-156" value="vehicles" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2798" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-157" value="id | name | address | total_capcity |&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2260" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-158" value="id | floor_number | address |&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_lot_id&lt;/span&gt;&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2330" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-159" value="id | gate_number | &lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_lot_id&lt;/span&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2400" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-160" value="Steps to design Schema&amp;nbsp;&lt;br&gt;1. Identify entities and enums from class diagram&lt;div&gt;2. Add primitive columns for the table schema&lt;/div&gt;&lt;div&gt;3. Find cardinality between tables and add the relationship ids&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="2100" width="350" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-161" value="id | slot_number |&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_floor_id&lt;/span&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2470" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-162" value="id | name | emp_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2550" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-163" value="id | entry_time |&amp;nbsp;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_slot_id&lt;/span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2618" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-164" value="id | amount | exit_time&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2688" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-165" value="id | date | refNumber | amount&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2748" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-166" value="id | number | owner_name" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2828" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-167" value="vehicle_types" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2890" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-168" value="id | value |&amp;nbsp;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_lot_id&lt;/span&gt;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2920" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-169" value="parking_lot_vehicle_types" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="2990" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-170" value="id | &lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_lot_id&lt;/span&gt;&amp;nbsp;| &lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;vehicle_type_id&lt;/span&gt; | capacity" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="24" y="3020" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-175" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tVv8EJueiG8kkGohXM46-171" target="tVv8EJueiG8kkGohXM46-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-171" value="How to handle &lt;b&gt;live capacity&amp;nbsp;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="3080" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-174" value="Cache capacity. not required to store in DB. As its update very frequently&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="232.5" y="3080" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-176" value="This is to store capacity of vehicles based on vehicle types for &lt;b&gt;entire parking lot&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="200" y="2990" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-177" value="Parking floor ---&amp;gt; Vechile_Types" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="25" y="3140" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-180" value="Parking slot ---&amp;gt; Vechile_Types" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="17" y="3310" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-181" value="parking_floor_vehicle_types" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="27" y="3172" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-182" value="id | &lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_floor_id&lt;/span&gt;&amp;nbsp;| &lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;vehicle_type_id&lt;/span&gt; | capacity" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="27" y="3202" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-183" value="This is to store capacity of vehicles based on vehicle types for &lt;b&gt;entire floor&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="218" y="3172" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-185" value="Capacity store the total available capactiy in the table, not the calculated" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="365" y="3120" width="410" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-188" value="By &lt;b&gt;joining &lt;/b&gt;parking_floor_vechile_type, floor, parkinglot table we can know the capacity of entire parking lot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="205" y="3260" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-190" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios.iDeleteIcon;fillColor=#e8878E;fillColor2=#BD1421;strokeColor=#ffffff;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="675" y="3005" width="35" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-191" value="parking_slot_vehicle_types" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="29.5" y="3360" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-192" value="id | &lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;parking_floor_id&lt;/span&gt;&amp;nbsp;| &lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;vehicle_type_id&lt;/span&gt; | capacity" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="29.5" y="3390" width="590" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-193" value="This is to store capacity of vehicles based on vehicle types for &lt;b&gt;entire floor&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="220.5" y="3360" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-196" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.ios.iDeleteIcon;fillColor=#e8878E;fillColor2=#BD1421;strokeColor=#ffffff;sketch=0;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="3172" width="35" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-198" value="Same as above, we can &lt;b&gt;join &lt;/b&gt;slot floor parking lot to get its respective capacity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="300" y="3440" width="440" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-199" value="What if the floor/parkingLot capactiy is calculated very frequently ?&lt;br&gt;Its better to have the above removed table for faster computation" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="17" y="3502" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-200" value="Ticket&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="3568" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-201" value="Parkign Slot" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="95" y="3568" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-202" value="M" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="3598" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-203" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="3598" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-204" value="&lt;b&gt;TODO complete schema&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="3560" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-205" value="All the above are association relationshop" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="34" y="3660" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-206" value="How to represent inheritance in schema ?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=4" vertex="1" parent="1">
+          <mxGeometry x="26" y="3718" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-207" value="Eg: Pen -&amp;gt; Ball Pen&lt;br&gt;-&amp;gt; Gell Pen" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="340" y="3708" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-210" value="id | name&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22vehicles%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dleft%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222798%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%223%22%20value%3D%22id%20%7C%20number%20%7C%20owner_name%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dleft%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2224%22%20y%3D%222828%22%20width%3D%22590%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E &lt;span style=&quot;background-color: rgb(255, 204, 204);&quot;&gt;n&lt;/span&gt;&lt;/span&gt;| price | pen_type" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="133" y="3773" width="157" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-211" value="pen" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="135" y="3748" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-212" value="pen_Id | radius" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="313" y="3773" width="157" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-213" value="gell_pen" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="3748" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-214" value="pen_id | ink_type" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="513" y="3773" width="157" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-215" value="pen" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="3748" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-216" value="Project structure" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="19" y="3890" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-217" value="models" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="27" y="3920" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-218" value="controllers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="3940" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-219" value="services" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="3960" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-220" value="repositories" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="24" y="3978" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-225" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="tVv8EJueiG8kkGohXM46-221" target="tVv8EJueiG8kkGohXM46-224">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-221" value="dtos" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25" y="4000" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tVv8EJueiG8kkGohXM46-224" value="For responses in API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="115" y="4000" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

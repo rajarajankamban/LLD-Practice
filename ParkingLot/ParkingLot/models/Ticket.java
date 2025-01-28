@@ -2,19 +2,13 @@ package ParkingLot.models;
 
 import java.util.Date;
 
-public class Ticket {
-    private String id;
+public class Ticket extends BaseEntity {
     private Date entryTime;
     private TicketStatus ticketStatus;
     private Vehicle vehicle;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private Slot slot;
+    private Operator operator;
+    private Gate gate;
 
     public Date getEntryTime() {
         return entryTime;
@@ -64,7 +58,5 @@ public class Ticket {
         this.gate = gate;
     }
 
-    private Slot slot;
-    private Operator operator;
-    private Gate gate;
+
 }

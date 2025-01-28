@@ -2,7 +2,7 @@ package ParkingLot.models;
 
 import java.util.Date;
 
-public class Bill {
+public class Bill{
      private String id;
      private double amount;
      private Date exitTime;
